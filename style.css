@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: roboto;
+    color: #333;
+  }
+  :root{
+    --cor-1: #000;
+    --cor-2: #f1f1f1;
+    --space-1: 5px;
+    --space-2: 10px;
+    --space-3: 15px;
+  }
+  h1{
+    color: var(--cor-1);
+  }
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+  }
+  
+  /*header*/
+  .h_principal{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    align-items: center;
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--cor-2);
+  }
+ .logo_tiktok{
+    max-width: 120px;
+ }
+  .search{
+    position: relative;
+  /*   background: blue; */
+  }
+  .search i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .search input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    background: var(--cor-2);
+    outline: none;
+  }
+  .notifications{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .icons_Message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    
+  }
+  .loader{
+    border: 2px solid #d8d8d8;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  .loader span:nth-child(1){
+    font-size: 1.3rem;
+    color: var(--cor-1);
+  }
+  .loader span:nth-child(2){
+    font-size: 0.9rem;
+  }
+  .profile_1{
+    width: 30px;
+    height: 30px;
+    clip-path: circle();
+    background-image: url(./img/cristiano.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper_Main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: calc(100vh - 50px);
+  }
+  sidebar{
+    display: grid;
+    grid-template-rows: 150px 200px 1fr;    
+    padding: 0px 15px;
+    /* background-color: #83D8FF; */
+  }
+  .side_Icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .profile_2{
+    width: 30px;
+    height: 30px;
+    clip-path: circle();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .real-madrid{
+    background-image: url(./img/madrid.png);
+  }
+  .gremio{
+    background-image: url(./img/gremio.png);
+  }
+  .neymar{
+    background-image: url(./img/neymar.jpg);
+  }
+  .item{
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .item h2{
+    font-size: 1.2rem;
+  }
+  .following{
+    display: grid;
+  }
+  .following span{
+    color: gray;
+  }
+  .follow{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: var(--space-2);
+  }
+  .selo i{
+    color: #83D8FF;
+  }
+  .fixed{
+    color: gray;
+  }
+  .discovery{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--space-1);
+    overflow-y: auto;
+    height: 350px;
+  }
+  .following span{
+    font-size: 0.9rem;
+  }
+  ::-webkit-scrollbar-track {
+      background-color: #F4F4F4;
+  }
+  ::-webkit-scrollbar {
+      width: 6px;
+      background: #F4F4F4;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #dad7d7;
+  }
+  .d_item{
+    padding: 5px 15px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 
+  }
+  main{
+    display: grid;
+    grid-template-rows: 190px 1fr;
+  }
+  .line_1{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 25px 15px;
+    gap: var(--space-3);
+  }
+  .box_Profile{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: var(--space-2);
+    align-items: center;
+    width: 50%;
+  }
+  .profile_Circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #222;
+    background-image: url(./img/cristiano.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .profile_Info{
+    display: grid;
+    gap: var(--space-2)
+  }
+  .profile_Info button{
+    border: 1px solid #d8d8d8;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-weight: bold;
+    background: #fff;
+  }
+  .share{
+    align-self: start;
+    justify-self: end;
+  }
+  .profile_Peoples{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: 0.8rem;
+  }
+  .followrs{
+    display: flex;
+    gap: var(--space-2);
+  }
+  .line_2{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+  }
+  .choice{
+  /*   background: green; */
+    max-width: 300px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .choice div:nth-child(1){
+    padding: 10px 0px;
+    border-bottom: 2px solid #777;
+  }
+  .choice div:nth-child(2){
+    padding: 10px 0px;
+    color: gray;
+  }
+  .video{
+    display: grid;
+    place-content: center;
+  }
+  .box_Video{
+    display: grid;
+    gap: var(--space-3);
+    justify-items: center;
+  }
+  .box_Video i{
+    color: #d8d8d8;
+  }
+  .info_video{
+    text-align: center;
+  }
